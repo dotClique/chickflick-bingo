@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tinder-bingo/static/css/main.4b79f45f.chunk.css",
-    "main.js": "/tinder-bingo/static/js/main.855ccf69.chunk.js",
-    "main.js.map": "/tinder-bingo/static/js/main.855ccf69.chunk.js.map",
-    "runtime-main.js": "/tinder-bingo/static/js/runtime-main.26f67887.js",
-    "runtime-main.js.map": "/tinder-bingo/static/js/runtime-main.26f67887.js.map",
-    "static/js/2.9a187e7e.chunk.js": "/tinder-bingo/static/js/2.9a187e7e.chunk.js",
-    "static/js/2.9a187e7e.chunk.js.map": "/tinder-bingo/static/js/2.9a187e7e.chunk.js.map",
-    "index.html": "/tinder-bingo/index.html",
-    "static/css/main.4b79f45f.chunk.css.map": "/tinder-bingo/static/css/main.4b79f45f.chunk.css.map",
-    "static/js/2.9a187e7e.chunk.js.LICENSE.txt": "/tinder-bingo/static/js/2.9a187e7e.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/tinder-bingo/static/media/chalet-new-york-nineteen-seventy.573d2449.ttf",
-    "static/media/github.1dd51261.svg": "/tinder-bingo/static/media/github.1dd51261.svg"
+    "main.css": "/chickflick-bingo/static/css/main.77e55696.chunk.css",
+    "main.js": "/chickflick-bingo/static/js/main.17f975db.chunk.js",
+    "main.js.map": "/chickflick-bingo/static/js/main.17f975db.chunk.js.map",
+    "runtime-main.js": "/chickflick-bingo/static/js/runtime-main.d5b3f844.js",
+    "runtime-main.js.map": "/chickflick-bingo/static/js/runtime-main.d5b3f844.js.map",
+    "static/js/2.77c39819.chunk.js": "/chickflick-bingo/static/js/2.77c39819.chunk.js",
+    "static/js/2.77c39819.chunk.js.map": "/chickflick-bingo/static/js/2.77c39819.chunk.js.map",
+    "index.html": "/chickflick-bingo/index.html",
+    "static/css/main.77e55696.chunk.css.map": "/chickflick-bingo/static/css/main.77e55696.chunk.css.map",
+    "static/js/2.77c39819.chunk.js.LICENSE.txt": "/chickflick-bingo/static/js/2.77c39819.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/chickflick-bingo/static/media/lovenessthree.b8eb1b4f.ttf",
+    "static/media/github.4e19cc23.svg": "/chickflick-bingo/static/media/github.4e19cc23.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.26f67887.js",
-    "static/js/2.9a187e7e.chunk.js",
-    "static/css/main.4b79f45f.chunk.css",
-    "static/js/main.855ccf69.chunk.js"
+    "static/js/runtime-main.d5b3f844.js",
+    "static/js/2.77c39819.chunk.js",
+    "static/css/main.77e55696.chunk.css",
+    "static/js/main.17f975db.chunk.js"
   ]
 }
