@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "./assets/chalet-new-york-nineteen-seventy.ttf";
+import "./assets/lovenessthree.ttf";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

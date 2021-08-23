@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import BingoCell from "./components/BingoCell";
 import Radio from "./components/Radio";
 import logo from "./github.svg";
-import fireImgOpaque from "./assets/background.png";
+import heart from "./assets/heart.png";
 import bingopile from "./bingo.json";
 class App extends Component {
   constructor(props) {
@@ -121,34 +121,14 @@ class App extends Component {
   };
 
   generatePicks(bingopile) {
-    const femaleOptions = bingopile.optionsFemale.concat(
-      bingopile.optionsUnisex
-    );
-    const maleOptions = bingopile.optionsMale.concat(bingopile.optionsUnisex);
-    const unisexOptions = bingopile.optionsUnisex.concat(
-      bingopile.optionsMale.concat(bingopile.optionsFemale)
-    );
+    const chickFlickOptions = bingopile.optionsChickFlick
     let picks = [];
     for (let i = 0; i < 16; i++) {
-      if (this.state.bingo_type === "m") {
-        let k = Math.floor(Math.random() * maleOptions.length);
-        while (picks.indexOf(maleOptions[k]) > -1) {
-          k = Math.floor(Math.random() * maleOptions.length);
-        }
-        picks[i] = maleOptions[k];
-      } else if (this.state.bingo_type === "f") {
-        let k = Math.floor(Math.random() * femaleOptions.length);
-        while (picks.indexOf(femaleOptions[k]) > -1) {
-          k = Math.floor(Math.random() * femaleOptions.length);
-        }
-        picks[i] = femaleOptions[k];
-      } else {
-        let k = Math.floor(Math.random() * unisexOptions.length);
-        while (picks.indexOf(unisexOptions[k]) > -1) {
-          k = Math.floor(Math.random() * unisexOptions.length);
-        }
-        picks[i] = unisexOptions[k];
+      let k = Math.floor(Math.random() * chickFlickOptions.length);
+      while (picks.indexOf(chickFlickOptions[k]) > -1) {
+        k = Math.floor(Math.random() * chickFlickOptions.length);
       }
+      picks[i] = chickFlickOptions[k];
     }
     return picks;
   }
@@ -190,9 +170,9 @@ class App extends Component {
           onClick={() => this.setState({ is_full_bingo: false })}
         >
           <div className="bingotextUpper">
-            <img src={fireImgOpaque} alt="Flamme" />
-            <img src={fireImgOpaque} alt="Flamme" />
-            <img src={fireImgOpaque} alt="Flamme" />
+            <img src={heart} alt="Flamme" />
+            <img src={heart} alt="Flamme" />
+            <img src={heart} alt="Flamme" />
           </div>
           <div className="bingotext">
             <span>Gratulerer, du har vunnet kvelden!</span>
@@ -204,9 +184,9 @@ class App extends Component {
           onClick={() => this.setState({ is_bingo: false })}
         >
           <div className="bingotext">
-            <img src={fireImgOpaque} alt="Flamme" />
+            <img src={heart} alt="Flamme" />
             <span>Bingo!</span>
-            <img src={fireImgOpaque} alt="Flamme" />
+            <img src={heart} alt="Flamme" />
           </div>
           <p>(Trykk for å lukke)</p>
         </div>
@@ -220,13 +200,12 @@ class App extends Component {
             </p>
             <br />
             <p>
-              1) En person viser Tinderen sin på storskjerm (Chromecast,
-              Airplay) og begynner å sveipe gjennom profilene.
+              1) Sett på en chickflick
             </p>
             <br />
             <p>
               2) Alle krysser av på sitt eget brett og drikker en slurk når det
-              kommer profiler som passer rutene sine.
+              kommer situasjoner som matcher brettet.
             </p>
             <br />
             <p>
@@ -236,7 +215,7 @@ class App extends Component {
             <br />
             <p>
               4) Vinneren er den som får fyllt hele bingokortet (eller h*n som
-              har flest når man går tom for swipes)
+              har flest når filmen er over)
             </p>
 
             <br />
@@ -244,78 +223,34 @@ class App extends Component {
               <b>Alle skåler og drikker når</b>
             </p>
             <br />
-            <p>1) Du får reklame.</p>
+            <p>1) Noen kysser</p>
             <br />
-            <p>2) It’s a match!</p>
+            <p>2) En til regel</p>
             <br />
-            <p>3) Personen som sveiper gir super-like ved uhell</p>
+            <p>3) Enda en regel</p>
             <br />
-            <p>4) Noen kjenner personen på storskjerm.</p>
+            <p>4) Og en regel til igjen</p>
           </div>
           <p>(Trykk for å lukke)</p>
-        </div>
-        <div className={this.state.confirmReset ? "popup show" : "popup"}>
-          <div className="textWindow">
-            <p>Hvilke(t) kjønner sveiper dere på?</p>
-            <div className="categories">
-              <Radio
-                text={"Menn"}
-                name={"gender"}
-                value={"m"}
-                checked={this.compareRadioValue("m")}
-                handleChange={() => this.setState({ bingo_type: "m" })}
-              />
-              <Radio
-                text={"Kvinner"}
-                name={"gender"}
-                value={"f"}
-                checked={this.compareRadioValue("f")}
-                handleChange={() => this.setState({ bingo_type: "f" })}
-              />
-              <Radio
-                text={"Unisex"}
-                name={"gender"}
-                value={"b"}
-                checked={this.compareRadioValue("b")}
-                handleChange={() => this.setState({ bingo_type: "b" })}
-              />
-            </div>
-            <br />
-            <button
-              onClick={() => {
-                this.generateBoard();
-                this.setState({ confirmReset: false });
-              }}
-            >
-              Nytt brett
-            </button>
-          </div>
-
-          <p
-            onClick={() => this.setState({ confirmReset: false })}
-            style={{ width: "100%", padding: "8rem 0" }}
-          >
-            (Eller trykk for å lukke)
-          </p>
         </div>
 
         <div className="App-header">
           <span className="logo">
-            <img src={fireImgOpaque} alt="Abakus logo" />
-            <span> Tinderbingo</span>
+            <img src={heart} alt="Abakus logo" />
+            <span> ChickFlick Bingo</span>
           </span>
           <div className="newBoard">
-            <button onClick={() => this.setState({ confirmReset: true })}>
-              Bytt kjønn / nytt brett
+            <button onClick={() => this.generateBoard()}>
+              nytt brett
             </button>
           </div>
           <div className="rules">
             <button onClick={() => this.setState({ showRules: true })}>
               Regler
             </button>
-          </div>
+          </div>(
           <div className="github">
-            <a href={"https://github.com/magssch/tinder-bingo"}>
+            <a href={"https://github.com/dotClique/chickflick-bingo"}>
               <img src={logo} alt="Github" />
             </a>
           </div>

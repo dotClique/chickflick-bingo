@@ -3,7 +3,7 @@ body {
   user-select: none;
   margin: 0;
   padding: 0;
-  font-family: "ChaletNewYork";
+  font-family: "LoveBody";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,9 +11,14 @@ body {
 @font-face {
   font-family: "ChaletNewYork";
   src: local("ChaletNewYork"),
-    url(./assets/chalet-new-york-nineteen-seventy.ttf) format("truetype");
+    url(./assets/lovenessthree.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "LoveBody";
+  src: local("LoveBody"),
+  url(./assets/bodyText.ttf) format("truetype");
+}
 button {
   font-family: "ChaletNewYork";
 }
@@ -35,6 +40,7 @@ button {
   margin: auto;
   justify-content: space-between;
   transition: 0.2s;
+  font-family: "ChaletNewYork";
 }
 
 a,
@@ -391,7 +397,7 @@ a:visited {
 }
 
 .cell-selected {
-  background-image: url("./assets/background.png");
+  background-image: url("./assets/heart.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 70%;
