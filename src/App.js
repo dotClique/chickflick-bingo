@@ -248,7 +248,7 @@ class App extends Component {
             <button onClick={() => this.setState({ showRules: true })}>
               Regler
             </button>
-          </div>(
+          </div>
           <div className="github">
             <a href={"https://github.com/dotClique/chickflick-bingo"}>
               <img src={logo} alt="Github" />
