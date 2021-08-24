@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chickflick-bingo/static/css/main.77e55696.chunk.css",
-    "main.js": "/chickflick-bingo/static/js/main.17f975db.chunk.js",
-    "main.js.map": "/chickflick-bingo/static/js/main.17f975db.chunk.js.map",
+    "main.js": "/chickflick-bingo/static/js/main.96464e47.chunk.js",
+    "main.js.map": "/chickflick-bingo/static/js/main.96464e47.chunk.js.map",
     "runtime-main.js": "/chickflick-bingo/static/js/runtime-main.d5b3f844.js",
     "runtime-main.js.map": "/chickflick-bingo/static/js/runtime-main.d5b3f844.js.map",
     "static/js/2.77c39819.chunk.js": "/chickflick-bingo/static/js/2.77c39819.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d5b3f844.js",
     "static/js/2.77c39819.chunk.js",
     "static/css/main.77e55696.chunk.css",
-    "static/js/main.17f975db.chunk.js"
+    "static/js/main.96464e47.chunk.js"
   ]
 }
